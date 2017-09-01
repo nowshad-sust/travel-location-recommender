@@ -12,6 +12,9 @@
         <h1>{{	.Question	}}</h1>
         <h3>{{	.Question_type	}}</h3>
         {{range .Options}}
+            {{range .Tags}}
+                <span>{{.}}</span>
+            {{end}}
             <img src="{{ .Image }}" alt="Image">
         {{end}}
     {{end}}
