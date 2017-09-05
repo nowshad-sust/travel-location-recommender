@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "question": "What type of weather you wanna experience",
         "question_type": "select",
         "options": [
@@ -9,7 +10,7 @@
                     "cool",
                     "ice"
                 ],
-                "image": "assets/images/data/1.jpeg"
+                "image": "static/images/data/1.jpeg"
             },
             {
                 "tags": [
@@ -17,14 +18,36 @@
                     "humid",
                     "warm"
                 ],
-                "image": "assets/images/data/2.jpeg"
+                "image": "static/images/data/2.jpeg"
             },
             {
                 "tags": [
                     "medium",
                     "normal"
                 ],
-                "image": "assets/images/data/1.jpg"
+                "image": "static/images/data/3.jpg"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "question": "What are you expecting?",
+        "question_type": "select",
+        "options": [
+            {
+                "tags": [
+                    "medium",
+                    "normal"
+                ],
+                "image": "static/images/data/3.jpg"
+            },
+            {
+                "tags": [
+                    "cold",
+                    "cool",
+                    "ice"
+                ],
+                "image": "static/images/data/1.jpeg"
             }
         ]
     }

@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"net/http"
 	"path"
+	"strings"
 
 	"../ibelongto/model"
 
@@ -50,7 +51,7 @@ func main() {
 
 	r := httprouter.New()
 	r.GET("/", HomeHandler)
-	r.POST("/posts", PostsCreateHandler)
+	r.POST("/post", PostsCreateHandler)
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
 	fmt.Println("Starting	server	on	:8080")
@@ -68,6 +69,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	// }
 	str := `[
 		{
+			"id":1,
 			"question": "What type of weather you wanna experience",
 			"question_type": "select",
 			"options": [
@@ -92,7 +94,29 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 						"medium",
 						"normal"
 					],
-					"image": "static/images/data/2.jpeg"
+					"image": "static/images/data/3.jpg"
+				}
+			]
+		},
+		{
+			"id":2,
+			"question": "What are you expecting?",
+			"question_type": "select",
+			"options": [
+				{
+					"tags": [
+						"medium",
+						"normal"
+					],
+					"image": "static/images/data/3.jpg"
+				},
+				{
+					"tags": [
+						"cold",
+						"cool",
+						"ice"
+					],
+					"image": "static/images/data/1.jpeg"
 				}
 			]
 		}
@@ -113,5 +137,15 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	}
 }
 func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	fmt.Fprintln(rw, "posts	create")
+	r.ParseForm()
+	for _, val := range r.Form {
+		for _, tag := range val {
+			strs := strings.Split(strings.TrimSpace(tag), " ")
+			fmt.Println(strs)
+			// for _, str := range strs {
+			// 	fmt.Println(str, len(str))
+			// }
+		}
+	}
+	fmt.Fprintln(rw, r.Form)
 }
