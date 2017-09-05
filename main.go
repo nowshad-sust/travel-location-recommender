@@ -51,11 +51,13 @@ func main() {
 	r := httprouter.New()
 	r.GET("/", HomeHandler)
 	r.POST("/posts", PostsCreateHandler)
+	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
-	fmt.Println("Starting	server	on	:8000")
-	http.ListenAndServe(":8000", r)
-	http.ListenAndServe(":8000", http.FileServer(http.Dir("./assets")))
+	fmt.Println("Starting	server	on	:8080")
+	http.ListenAndServe(":8080", r)
+
 }
+
 func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// load data from json file
@@ -75,7 +77,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 						"cool",
 						"ice"
 					],
-					"image": "assets/images/1.jpeg"
+					"image": "static/images/data/1.jpeg"
 				},
 				{
 					"tags": [
@@ -83,14 +85,14 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 						"humid",
 						"warm"
 					],
-					"image": "assets/images/2.jpeg"
+					"image": "static/images/data/2.jpeg"
 				},
 				{
 					"tags": [
 						"medium",
 						"normal"
 					],
-					"image": "assets/images/2.jpeg"
+					"image": "static/images/data/2.jpeg"
 				}
 			]
 		}
