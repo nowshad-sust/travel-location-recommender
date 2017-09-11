@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
+	"io/ioutil"
 	"net/http"
+	"os"
 	"path"
 	"strings"
 
@@ -37,20 +39,37 @@ they belong based on their feedback.
 	backend load. Just the final tags array should be
 	posted to the back end and wait for response.
 
-# sleek UI/UX must be implemented for all the front end
+# sleek UI/UX must be implemented for of all the front end
 	effects and functionalities.
 
 */
+var DATA []model.Question
+var JSON []byte
 
-type Book struct {
-	Title  string
-	Author string
+func getData() []model.Question {
+	// load data from json file
+	file, e := ioutil.ReadFile("./database/data.json")
+
+	JSON = file
+	if e != nil {
+		fmt.Printf("File error: %v\n", e)
+		os.Exit(1)
+	}
+
+	var qs []model.Question
+	json.Unmarshal([]byte(file), &qs)
+	DATA = qs
+	return qs
 }
 
 func main() {
 
+	// load data
+	getData()
+
 	r := httprouter.New()
 	r.GET("/", HomeHandler)
+	r.GET("/json", JsonResponse)
 	r.POST("/post", PostsCreateHandler)
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
@@ -61,70 +80,6 @@ func main() {
 
 func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
-	// load data from json file
-
-	// f, err := os.Open("./database/data.json")
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	str := `[
-		{
-			"id":1,
-			"question": "What type of weather you wanna experience",
-			"question_type": "select",
-			"options": [
-				{
-					"tags": [
-						"cold",
-						"cool",
-						"ice"
-					],
-					"image": "static/images/data/1.jpeg"
-				},
-				{
-					"tags": [
-						"hot",
-						"humid",
-						"warm"
-					],
-					"image": "static/images/data/2.jpeg"
-				},
-				{
-					"tags": [
-						"medium",
-						"normal"
-					],
-					"image": "static/images/data/3.jpg"
-				}
-			]
-		},
-		{
-			"id":2,
-			"question": "What are you expecting?",
-			"question_type": "select",
-			"options": [
-				{
-					"tags": [
-						"medium",
-						"normal"
-					],
-					"image": "static/images/data/3.jpg"
-				},
-				{
-					"tags": [
-						"cold",
-						"cool",
-						"ice"
-					],
-					"image": "static/images/data/1.jpeg"
-				}
-			]
-		}
-	]`
-
-	var S []model.Question
-	json.Unmarshal([]byte(str), &S)
-
 	fp := path.Join("views", "index.html")
 	tmpl, err := template.ParseFiles(fp)
 	if err != nil {
@@ -132,10 +87,19 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		return
 	}
 
-	if err := tmpl.Execute(w, S); err != nil {
+	if err := tmpl.Execute(w, DATA); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
+
+func JsonResponse(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+	// Write content-type, statuscode, payload
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.WriteHeader(200)
+	fmt.Fprintf(w, "%s", JSON)
+}
+
 func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	r.ParseForm()
 	for _, val := range r.Form {
