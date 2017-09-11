@@ -1,16 +1,12 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
-	"strings"
-
-	"../ibelongto/model"
 
 	"github.com/julienschmidt/httprouter"
 )
@@ -43,23 +39,18 @@ they belong based on their feedback.
 	effects and functionalities.
 
 */
-var DATA []model.Question
 var JSON []byte
 
-func getData() []model.Question {
+func getData() {
 	// load data from json file
 	file, e := ioutil.ReadFile("./database/data.json")
 
-	JSON = file
 	if e != nil {
 		fmt.Printf("File error: %v\n", e)
 		os.Exit(1)
 	}
 
-	var qs []model.Question
-	json.Unmarshal([]byte(file), &qs)
-	DATA = qs
-	return qs
+	JSON = file
 }
 
 func main() {
@@ -70,7 +61,8 @@ func main() {
 	r := httprouter.New()
 	r.GET("/", HomeHandler)
 	r.GET("/json", JsonResponse)
-	r.POST("/post", PostsCreateHandler)
+	// r.POST("/post", PostsCreateHandler)
+
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
 	fmt.Println("Starting	server	on	:8080")
@@ -87,7 +79,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		return
 	}
 
-	if err := tmpl.Execute(w, DATA); err != nil {
+	if err := tmpl.Execute(w, false); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
@@ -100,16 +92,16 @@ func JsonResponse(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	fmt.Fprintf(w, "%s", JSON)
 }
 
-func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	r.ParseForm()
-	for _, val := range r.Form {
-		for _, tag := range val {
-			strs := strings.Split(strings.TrimSpace(tag), " ")
-			fmt.Println(strs)
-			// for _, str := range strs {
-			// 	fmt.Println(str, len(str))
-			// }
-		}
-	}
-	fmt.Fprintln(rw, r.Form)
-}
+// func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
+// 	r.ParseForm()
+// 	for _, val := range r.Form {
+// 		for _, tag := range val {
+// 			strs := strings.Split(strings.TrimSpace(tag), " ")
+// 			fmt.Println(strs)
+// 			// for _, str := range strs {
+// 			// 	fmt.Println(str, len(str))
+// 			// }
+// 		}
+// 	}
+// 	fmt.Fprintln(rw, r.Form)
+// }

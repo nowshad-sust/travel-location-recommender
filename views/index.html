@@ -13,38 +13,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="/post" method="post">
-                {{range	.}}
-                <div class="row">
-                    <h3>{{	.Question	}}</h3>
-                    <div>
-                        {{ $Id := .Id }}
-                        {{range .Options }}
-                            <div class="col-md-4">
-                                <input class="col-md-2" 
-                                        type="radio"
-                                        name="{{ $Id }}"
-                                        value="{{range .Tags}} {{ . }} {{end}}">
-
-                                <img class="col-md-10 img img-responsive" 
-                                    src="{{ .Image }}"
-                                    alt="Image">
-                            </div>
-                        {{end}}
-                    </div>
-                </div>
-                {{end}}
-                <button class="btn btn-primary" type="submit">Submit</button>
-                </form>
-            </div>
+                <h1>Welcome TO The Server</h1>
+            </div> 
         </div>
     </div>
 
-
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    <script>
-        var data = {{ . }}; 
-        console.log(data);
-    </script>
 </body>
 </html>
