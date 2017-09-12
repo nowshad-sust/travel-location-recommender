@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -9,6 +10,7 @@ import (
 	"path"
 
 	"github.com/julienschmidt/httprouter"
+	"github.com/rs/cors"
 )
 
 var JSON []byte
@@ -33,12 +35,14 @@ func main() {
 	r := httprouter.New()
 	r.GET("/", HomeHandler)
 	r.GET("/json", JsonResponse)
-	// r.POST("/post", PostsCreateHandler)
+	r.POST("/post", PostsCreateHandler)
 
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
+	handler := cors.Default().Handler(r)
+
 	fmt.Println("Starting	server	on	:8080")
-	http.ListenAndServe(":8080", r)
+	http.ListenAndServe(":8080", handler)
 
 }
 
@@ -57,23 +61,30 @@ func HomeHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 }
 
 func JsonResponse(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	// Write content-type, statuscode, payload
-	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 	w.WriteHeader(200)
 	fmt.Fprintf(w, "%s", JSON)
 }
 
-// func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
-// 	r.ParseForm()
-// 	for _, val := range r.Form {
-// 		for _, tag := range val {
-// 			strs := strings.Split(strings.TrimSpace(tag), " ")
-// 			fmt.Println(strs)
-// 			// for _, str := range strs {
-// 			// 	fmt.Println(str, len(str))
-// 			// }
-// 		}
-// 	}
-// 	fmt.Fprintln(rw, r.Form)
-// }
+func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
+
+	data := r.FormValue("data")
+	var jsonBlob = []byte(data)
+
+	// fmt.Println(data)
+	arr := [][]interface{}{}
+	err := json.Unmarshal(jsonBlob, &arr)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	for _, value := range arr {
+		for _, val := range value {
+			tag := fmt.Sprint(val)
+			fmt.Println(tag)
+		}
+	}
+
+	rw.WriteHeader(200)
+	fmt.Fprintln(rw, data)
+}

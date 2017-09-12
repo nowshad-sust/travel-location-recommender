@@ -9,7 +9,8 @@ they belong based on their feedback.
 # every question should have multiple choices
 # each option will consist some text or image
 # eatch option should value some tags
-# tag subjects: weather,
+# tag subjects: 
+                weather,
 				food,
 				culture,
 				men/women,
