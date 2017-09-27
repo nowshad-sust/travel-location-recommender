@@ -20,6 +20,18 @@ they belong based on their feedback.
 # based on the tags, find the most closet matched
 	location/place implementing some basic machine
 	learning techniques.
+	below case:
+		user likes:
+			['cold', 'mountain', 'adventure']
+
+		places array:
+			[
+				['mountain', 'peak']
+				['winter', 'cold', 'ice']
+				['forest', 'adventure']
+			]
+		
+	match the closest matching set of tags
 
 # questions can be static, and all of the form should
 	be loaded in the front end without creating any
