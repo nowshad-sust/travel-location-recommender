@@ -16,31 +16,6 @@
       ]
     },
     {
-      "text": "Type of places you wanna go?",
-      "options": [
-        {
-          "name": "city",
-          "tags": ["city", "town"],
-          "img":  "https://traveldigg.com/wp-content/uploads/2016/06/Eiffel-Tower-Paris-At-Night-Fireworks.jpg"
-        },
-        {
-          "name": "mountain",
-          "tags": ["mountain", "peak", "adventure"],
-          "img":  "https://images.unsplash.com/photo-1445282650865-52d8ea4e110b?dpr=1&auto=format&fit=crop&w=1199&h=722&q=80&cs=tinysrgb&crop="
-        },
-        {
-          "name": "sea",
-          "tags": ["water", "sea", "island", "summer"],
-          "img":  "https://i.pinimg.com/originals/39/53/d9/3953d9db51769c2fca2198ae9d885c6c.jpg"
-        },
-        {
-          "name": "forest",
-          "tags": ["adventure", "forest", "woods", "camp"],
-          "img":  "https://images.unsplash.com/photo-1440186347098-386b7459ad6b?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-        }
-      ]
-    },
-    {
       "text": "You want ?",
       "options": [
         {
@@ -62,11 +37,6 @@
           "name": "solo",
           "tags": ["solo", "alone"],
           "img":  "https://images.unsplash.com/reserve/unsplash_52d82741a4c2f_1.JPG?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-        },
-        {
-          "name": "family",
-          "tags": ["family", "couple"],
-          "img":  "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
         },
         {
           "name": "friends",
