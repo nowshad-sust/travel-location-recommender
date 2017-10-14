@@ -51,6 +51,7 @@ func main() {
 	r.GET("/", HomeHandler)
 	r.GET("/json", JsonResponse)
 	r.POST("/post", PostsCreateHandler)
+	r.POST("/v2/post", PostHandler)
 
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
 
@@ -79,6 +80,39 @@ func JsonResponse(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	w.WriteHeader(200)
 	fmt.Fprintf(w, "%s", JSON)
+}
+
+func PostHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
+
+	data := r.FormValue("data")
+	var jsonBlob = []byte(data)
+
+	var arr []string
+	err := json.Unmarshal(jsonBlob, &arr)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	var diffArray []int
+
+	for _, place := range PLACES {
+		z, ok := lib.Intersect(arr, place.Tags)
+		if !ok {
+			fmt.Println("Cannot find intersect")
+		}
+		slice, ok := z.Interface().([]string)
+		if !ok {
+			fmt.Println("Cannot convert to slice")
+		}
+		diffArray = append(diffArray, len(slice))
+	}
+
+	suggestionIndex, _ := lib.Max(diffArray)
+
+	res, _ := json.Marshal(PLACES[suggestionIndex])
+
+	rw.WriteHeader(200)
+	fmt.Fprintln(rw, string(res))
 }
 
 func PostsCreateHandler(rw http.ResponseWriter, r *http.Request, p httprouter.Params) {
