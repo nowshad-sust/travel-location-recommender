@@ -1,12 +1,34 @@
 # I belong To
 
-a user selects options from each questions
+## places list
+### USA
+* Death Valley, CA
+* Monument Valley, UT
+* Niagara Falls, NY
+* Redwoods, CA
+* Grand Canyon, AZ
+* Hubbard Glacier, AK
+* Bryce Canyon, UT
+* Mt. Desert Island, ME
+* Crater Lake, OR
+* Arches, UT
+* Yosemite Valley, CA
+* Carlsbad Caverns, NM
+* Old Faithful, WY
 
-like - 
-where do you pefer you live 
-assume that there'll be three images
+### Canada
+* Old Faithful, WY
+* Capilano Suspension Bridge Park – British Columbia
+* Yellowknife and Great Slave Lake
+* Waterton Lakes National Park
 
-1.  weather: cold, warm, humid,
-    place: forest, mountain, sea, dessert,
-    skin-tone: white, black, brown,
-    type: camping, hiking, cruise, luxury,
+### Norway
+* Fjords
+* The Stavanger region
+* TROLLTUNGA, odda
+* MARDALSFOSSEN WATERFALL, Mardalen, Nesset
+* Briksdal Glacier, Stryn
+* Flåm
+* Tromsø
+
+
