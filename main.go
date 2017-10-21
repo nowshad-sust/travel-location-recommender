@@ -54,6 +54,7 @@ func main() {
 	r.POST("/v2/post", PostHandler)
 
 	r.ServeFiles("/static/*filepath", http.Dir("./static"))
+	r.NotFound = http.FileServer(http.Dir("static/"))
 
 	handler := cors.Default().Handler(r)
 
