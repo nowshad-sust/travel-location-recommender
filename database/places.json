@@ -1,42 +1,47 @@
 [
     {
         "id":   "1",
-        "name": "Test Location",
-        "tags": ["cold","mountain", "adventure"],
-        "description": "In the United States, owners and marketers of attractions advertise tourist attractions on billboards along the side of highways and roadways, especially in remote areas. Tourist attractions often provide free promotional brochures and flyers in information centres, fast food restaurants, hotel and motel rooms or lobbies, and rest area. \n While some tourist attractions provide visitors a memorable experience for a reasonable admission charge or even for free, others can have a tendency to be of low quality and to overprice their goods and services (such as admission, food, and souvenirs) in order to profit from tourists excessively. Such places are commonly known as tourist traps.",
+        "name": "Death Valley, CA",
+        "tags": ["desert","hot", "warm", "sand"],
+        "description": "",
         "images": [
-            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QwIr88a/hiking-trekking-winter-nature-blue-white-beautiful-mountains-with-clear-hiker-snow-adventure-travel-mountain-outdoor-extreme-cold-sport-ice-active-sky-climbing-trek-mountaineering-backpacker-landscape-people_e1fuilar__S0000.jpg"
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2010/05/death-valley-california-3-1.jpg",
+            "http://travelercorner.com/wp-content/uploads/2016/03/Nat-Geo-Death-Valley-show.jpg",
+            "http://travelercorner.com/wp-content/uploads/2016/03/death-valley-national-park-california-usa.jpg"
         ],
-        "video": "https://www.youtube.com/watch?v=Scxs7L0vhZ4"
+        "video": "https://www.youtube.com/watch?v=c2_fyZgNglE"
     },
     {
-        "id":   "1",
-        "name": "Test Location",
-        "tags": ["winter","ice", "forest"],
-        "description": "In the United States, owners and marketers of attractions advertise tourist attractions on billboards along the side of highways and roadways, especially in remote areas. Tourist attractions often provide free promotional brochures and flyers in information centres, fast food restaurants, hotel and motel rooms or lobbies, and rest area. \n While some tourist attractions provide visitors a memorable experience for a reasonable admission charge or even for free, others can have a tendency to be of low quality and to overprice their goods and services (such as admission, food, and souvenirs) in order to profit from tourists excessively. Such places are commonly known as tourist traps.",
+        "id":   "2",
+        "name": "Monument Valley, UT",
+        "tags": ["hot","monument", "valley", "rock", "warm"],
+        "description": "",
         "images": [
-            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QwIr88a/hiking-trekking-winter-nature-blue-white-beautiful-mountains-with-clear-hiker-snow-adventure-travel-mountain-outdoor-extreme-cold-sport-ice-active-sky-climbing-trek-mountaineering-backpacker-landscape-people_e1fuilar__S0000.jpg"
+            "https://images.unsplash.com/photo-1464553186862-680edae5b2bc?w=1055",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/4077440899_ea76781f27_b.jpg"
         ],
-        "video": "https://www.youtube.com/watch?v=Scxs7L0vhZ4"
+        "video": "https://www.youtube.com/watch?v=aFddiHCWtM0"
     },
     {
-        "id":   "1",
-        "name": "Test Location",
-        "tags": ["cold","mountain", "adventure"],
-        "description": "In the United States, owners and marketers of attractions advertise tourist attractions on billboards along the side of highways and roadways, especially in remote areas. Tourist attractions often provide free promotional brochures and flyers in information centres, fast food restaurants, hotel and motel rooms or lobbies, and rest area. \n While some tourist attractions provide visitors a memorable experience for a reasonable admission charge or even for free, others can have a tendency to be of low quality and to overprice their goods and services (such as admission, food, and souvenirs) in order to profit from tourists excessively. Such places are commonly known as tourist traps.",
+        "id":   "3",
+        "name": "Grand Canyon, AZ",
+        "tags": ["grand","canyon", "rock", "mountain", "hot"],
+        "description": "",
         "images": [
-            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QwIr88a/hiking-trekking-winter-nature-blue-white-beautiful-mountains-with-clear-hiker-snow-adventure-travel-mountain-outdoor-extreme-cold-sport-ice-active-sky-climbing-trek-mountaineering-backpacker-landscape-people_e1fuilar__S0000.jpg"
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/joshua-earle-109629.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/jad-limcaco-183877.jpg"
         ],
-        "video": "https://www.youtube.com/watch?v=Scxs7L0vhZ4"
+        "video": "https://www.youtube.com/watch?v=huqJUghX26Y"
     },
     {
-        "id":   "1",
-        "name": "Test Location",
-        "tags": ["cold","mountain", "adventure"],
-        "description": "In the United States, owners and marketers of attractions advertise tourist attractions on billboards along the side of highways and roadways, especially in remote areas. Tourist attractions often provide free promotional brochures and flyers in information centres, fast food restaurants, hotel and motel rooms or lobbies, and rest area. \n While some tourist attractions provide visitors a memorable experience for a reasonable admission charge or even for free, others can have a tendency to be of low quality and to overprice their goods and services (such as admission, food, and souvenirs) in order to profit from tourists excessively. Such places are commonly known as tourist traps.",
+        "id":   "4",
+        "name": "Niagara Falls, NY",
+        "tags": ["falls","niagra", "waterfall"],
+        "description": "",
         "images": [
-            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QwIr88a/hiking-trekking-winter-nature-blue-white-beautiful-mountains-with-clear-hiker-snow-adventure-travel-mountain-outdoor-extreme-cold-sport-ice-active-sky-climbing-trek-mountaineering-backpacker-landscape-people_e1fuilar__S0000.jpg"
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/kalen-emsley-94129.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/5683785766_b3ed8327a5_b.jpg"
         ],
-        "video": "https://www.youtube.com/watch?v=Scxs7L0vhZ4"
+        "video": "https://www.youtube.com/watch?v=IyBq4AdBKJI"
     }
 ]
