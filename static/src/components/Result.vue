@@ -38,7 +38,7 @@
 <script>
   import vm from '../App.vue';
   import { Carousel, Slide } from 'vue-carousel';
-  
+  import axios from 'axios';
 
 	export default {
      components: {
@@ -66,7 +66,7 @@
       
       var ref = this;
 
-      this.$http.post('http://localhost:8080/v2/post', 
+      axios.post('http://localhost:8080/v2/post', 
                     {data: JSON.stringify(localChoices)}).then(response => {
         console.log(response.body);
         // get body data

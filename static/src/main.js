@@ -4,7 +4,6 @@ import App from './App.vue'
 
 import BootstrapVue from 'bootstrap-vue'
 import VueLazyload from 'vue-lazyload'
-import VueResource from 'vue-resource'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 
 
@@ -21,7 +20,6 @@ Vue.use(VueLazyload, {
 })
 
 Vue.use(BootstrapVue)
-Vue.use(VueResource)
 Vue.use(VueYouTubeEmbed)
 
 

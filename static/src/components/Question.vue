@@ -34,6 +34,7 @@
 
 <script>
   import vm from '../App.vue';
+  import axios from 'axios';
 	export default {
         name: 'question',
 		data () {
@@ -49,7 +50,7 @@
       emulateHTTP: true
     },
 		created(){
-      this.$http.get("http://127.0.0.1:8080/json").then(response => {
+      axios.get("http://127.0.0.1:8080/json").then(response => {
         // success callback
         this.questions = response.data;
         this.q = this.questions[0];
