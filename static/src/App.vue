@@ -4,11 +4,11 @@
     <hr>
     <div class="container-fluid">
       <keep-alive>
-        <transition appear name="component-fade" mode="out-in">
+        <!-- <transition appear name="component-fade" mode="out-in"> -->
           <component v-bind:is="currentView" @childStart="onClickChild">
             <!-- component changes when vm.currentView changes! -->
           </component>
-        </transition>
+        <!-- </transition> -->
       </keep-alive>
     </div>
   </div>
@@ -59,13 +59,12 @@ export default {
   width: 100%;
 }
 
-.component-fade-enter-active, .component-fade-leave-active {
+/* .component-fade-enter-active, .component-fade-leave-active {
   transition: all .3s ease;
 }
-.component-fade-enter, .component-fade-leave-to
-/* .component-fade-leave-active below version 2.1.8 */ {
+.component-fade-enter, .component-fade-leave-to{
   opacity: 0;
-}
+} */
 
 </style>
 

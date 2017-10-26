@@ -1,5 +1,5 @@
 <template>
-	<transition name="slide-fade" mode="out-in">
+	<!-- <transition name="slide-fade" mode="out-in"> -->
 	
   <div v-if="questions == null" class="text-center">
     <h4> </h4>
@@ -29,7 +29,7 @@
 			</div>
 		</div>
 	</div>
-	</transition>
+	<!-- </transition> -->
 </template>
 
 <script>
@@ -50,7 +50,7 @@
       emulateHTTP: true
     },
 		created(){
-      axios.get("http://127.0.0.1:8080/json").then(response => {
+      axios.get("/json").then(response => {
         // success callback
         this.questions = response.data;
         this.q = this.questions[0];
@@ -99,15 +99,14 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
-.slide-fade-enter-active {
+/* .slide-fade-enter-active {
   transition: all .1s ease;
 }
 .slide-fade-leave-active {
   transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-leave-active below version 2.1.8 */ {
+.slide-fade-enter, .slide-fade-leave-to {
   transform: translateX(10px);
   opacity: 0;
-}
+} */
 </style>

@@ -50,10 +50,6 @@
 			response: null
 			}
     },
-    http: {
-      emulateJSON: true,
-      emulateHTTP: true
-    },
     created(){
       let localChoices = [];
       
@@ -66,11 +62,11 @@
       
       var ref = this;
 
-      axios.post('http://localhost:8080/v2/post', 
-                    {data: JSON.stringify(localChoices)}).then(response => {
-        console.log(response.body);
-        // get body data
-        ref.response = JSON.parse(response.body);
+      axios.post('http://localhost:8080/v2/post', {data: localChoices})
+        .then(response => {
+          console.log(response.data);
+          // get body data
+          ref.response = response.data;
       }, response => {
         // error callback
         console.log(response);
