@@ -157,5 +157,16 @@
             "https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_575,q_64,w_1200/v1/clients/norway/2-1_ad21bcb8-1a02-4eb8-a8c1-6dbe5dd8a06e.jpg"
         ],
         "video": "https://www.youtube.com/watch?v=bQOU8sPcbvE"
+    },
+    {
+        "id":   "15",
+        "name": "TROMSØ, Norway",
+        "tags": ["city", "aurora", "port", "northern", "whale", "cold"],
+        "description": "",
+        "images": [
+            "https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_575,q_64,w_1200/v1/clients/norway/northern-lights-tromso-norway_2-1_a8b03e36-f1cd-46be-939e-ebf6d70c41e2.jpg",
+        	"https://forskning.no/sites/default/files/styles/full_width/public/syf45f05_0.jpg?itok=DWgrIv5j&c=4de7dde32f9a693691936399629d6fba"
+        ],
+        "video": "https://www.youtube.com/watch?v=IuKH-ar-ydM"
     }
 ]

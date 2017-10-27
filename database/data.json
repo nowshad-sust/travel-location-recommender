@@ -44,30 +44,5 @@
           "img":  "https://images.unsplash.com/photo-1464198016405-33fd4527b89d?dpr=1&auto=format&fit=crop&w=1199&h=867&q=80&cs=tinysrgb&crop="
         }
       ]
-    },
-    {
-      "text": "You'd like to -",
-      "options": [
-        {
-          "name": "hike",
-          "tags": ["hike","mountain"],
-          "img":  "https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-        },
-        {
-          "name": "camp",
-          "tags": ["camp", "forest", "mountain", "lakes"],
-          "img":  "https://images.unsplash.com/photo-1496545672447-f699b503d270?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-        },
-        {
-          "name": "dive",
-          "tags": ["dive", "water", "sea", "lakes"],
-          "img":  "https://images.unsplash.com/photo-1484507175567-a114f764f78b?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop="
-        },
-        {
-          "name": "party",
-          "tags": ["friends", "city", "people", "party", "concert"],
-          "img":  "https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=https://images.unsplash.com/photo-1464198016405-33fd4527b89d?dpr=1&auto=format&fit=crop&w=1199&h=867&q=80&cs=tinysrgb&crop="
-        }
-      ]
     }
   ]

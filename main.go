@@ -45,7 +45,7 @@ func getData() {
 func main() {
 
 	// load data
-	getData()
+	go getData()
 
 	r := httprouter.New()
 	r.GET("/", HomeHandler)

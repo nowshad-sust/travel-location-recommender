@@ -8,9 +8,13 @@
 
         <div v-if="response" class="text-center">
           <h3>{{response.name}}</h3>
-          <carousel :autoplay="true" :navigationEnabled="true" :perPage="1">
+          <carousel :autoplay="true" 
+                    :autoplayTimeout="3000"
+                    :navigationEnabled="true" 
+                    :perPage="1" 
+                    :loop="true">
             <slide v-for="(image,index) in response.Images" :key="index">
-              <img :src="image" class="img-responsive">
+              <img :src="image" class="img-responsive slider-image">
               <h6 class="custom-caption">
                 source: {{ image }}
               </h6>
