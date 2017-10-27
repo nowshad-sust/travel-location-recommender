@@ -43,5 +43,119 @@
             "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/5683785766_b3ed8327a5_b.jpg"
         ],
         "video": "https://www.youtube.com/watch?v=IyBq4AdBKJI"
+    },
+    {
+        "id":   "5",
+        "name": "Redwoods, CA",
+        "tags": ["tree","forest", "adventure", "camp"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/arnaud-mesureur-88560.jpg",
+            "https://images.unsplash.com/photo-1472740378865-80aab8e73251?w=750&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/collage-1.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=MglBOaOnzqM"
+    },
+    {
+        "id":   "6",
+        "name": "Hubbard Glacier, AK",
+        "tags": ["ice","cold", "glacier", "ship"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/28469271586_73a1519a04_k.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/876209836_f94bd8a07e_b.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=OMzReVZn__M"
+    },
+    {
+        "id":   "7",
+        "name": "Bryce Canyon, UT",
+        "tags": ["canyon","brycecold", "desert", "rock"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2010/05/bryce-canyon-utah-1-1.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/7539199470_81ff81c702_k.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/14068031581_3ddf086ba1_k.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=UZr9YZfzUj8"
+    },
+    {
+        "id":   "8",
+        "name": "Mt. Desert Island, ME",
+        "tags": ["island", "sea", "mountain", "forest", "park"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/7727118570_45992acdf4_k.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/asaf-r-130436.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=93TnMRn-smw"
+    },
+    {
+        "id":   "9",
+        "name": "Crater Lake, OR",
+        "tags": ["lake", "park", "mountain"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/28181032605_9a7f16f7fe_k.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/1368776706_36598b0bfe_b.jpg",
+            "https://images.unsplash.com/photo-1506197185840-2cc9793b0da9?w=669&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+        ],
+        "video": "https://www.youtube.com/watch?v=VImqiFWRWZ4"
+    },
+    {
+        "id":   "10",
+        "name": "Yosemite Valley, CA",
+        "tags": ["lake", "mountain", "forest", "park","trees"],
+        "description": "",
+        "images": [
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/austin-schmid-134030.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/etienne-desclides-119062.jpg",
+            "https://d36tnp772eyphs.cloudfront.net/blogs/1/2017/02/Yosemite-Valley-Collage.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=9fJEFi3ccwI"
+    },
+    {
+        "id":   "11",
+        "name": "Fjords, Norway",
+        "tags": ["fjords", "ship", "mountains","cruise"],
+        "description": "",
+        "images": [
+            "https://res.cloudinary.com/simpleview/image/upload/c_limit,f_auto,h_1200,q_75,w_1200/v1/clients/norway/hellesylt_viewpoint_geirangerfjord_norway_2_1_e069511d-5403-438b-876a-e2864b70dc3a.jpg",
+            "https://images.unsplash.com/photo-1504519560822-bed2d817f87f?w=750&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
+            "http://mundy.assets.d3r.com/images/hero_large/37158-crystal-cruises-refurbishment-2017-serenity.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=BltMCyJjip8"
+    },
+    {
+        "id":   "12",
+        "name": "Stavanger, Norway",
+        "tags": ["city", "hike", "mountains","rock", "harbour"],
+        "description": "",
+        "images": [
+            "https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_575,q_64,w_1200/v1/clients/norway/preikestolen-pulpit-rock-lysefjorden-stavanger-norway-2-1_9de9a2e7-7b15-43ce-946b-bfb09baf4bad.jpg",
+            "http://www.thetravelmagazine.net/wp-content/uploads/stavanger-Skagenkaien-by-night.jpg",
+            "http://d2mve4pl256l37.cloudfront.net/globalassets/global/campaigns/fjord-norway/stavanger-norway-1400.jpg?width=800"
+        ],
+        "video": "https://www.youtube.com/watch?v=3I7j-LW18Tg"
+    },
+    {
+        "id":   "13",
+        "name": "Trolltunga, odda, Norway",
+        "tags": ["hike", "mountains","rock"],
+        "description": "",
+        "images": [
+            "https://res.cloudinary.com/simpleview/image/upload/c_limit,f_auto,h_1200,q_75,w_1200/v1/clients/norway/hiking-trolltunga-hardangerfjord-norway-2-1_353a98f6-1f27-4a0d-953c-f2267f4e4b20.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=dm6WpYDhDwM"
+    },
+    {
+        "id":   "14",
+        "name": "Bergen, Norway",
+        "tags": ["city", "port", "fjords", "house"],
+        "description": "",
+        "images": [
+            "https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_575,q_64,w_1200/v1/clients/norway/2-1_ad21bcb8-1a02-4eb8-a8c1-6dbe5dd8a06e.jpg"
+        ],
+        "video": "https://www.youtube.com/watch?v=bQOU8sPcbvE"
     }
 ]
