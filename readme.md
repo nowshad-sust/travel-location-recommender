@@ -2,17 +2,17 @@
 
 ## places list
 ### USA
-* Death Valley, CA
-* Monument Valley, UT
-* Niagara Falls, NY
-* Redwoods, CA
-* Grand Canyon, AZ
-* Hubbard Glacier, AK
-* Bryce Canyon, UT
-* Mt. Desert Island, ME
-* Crater Lake, OR
+* Death Valley, CA :checkered_flag:
+* Monument Valley, UT :checkered_flag:
+* Niagara Falls, NY :checkered_flag:
+* Redwoods, CA :checkered_flag:
+* Grand Canyon, AZ :checkered_flag:
+* Hubbard Glacier, AK :checkered_flag:
+* Bryce Canyon, UT :checkered_flag:
+* Mt. Desert Island, ME :checkered_flag:
+* Crater Lake, OR :checkered_flag:
 * Arches, UT
-* Yosemite Valley, CA
+* Yosemite Valley, CA :checkered_flag:
 * Carlsbad Caverns, NM
 * Old Faithful, WY
 
@@ -23,9 +23,10 @@
 * Waterton Lakes National Park
 
 ### Norway
-* Fjords
-* The Stavanger region
-* TROLLTUNGA, odda
+* Fjords :checkered_flag:
+* The Stavanger region :checkered_flag: 
+* TROLLTUNGA, odda :checkered_flag:
+* Bergen :checkered_flag:
 * MARDALSFOSSEN WATERFALL, Mardalen, Nesset
 * Briksdal Glacier, Stryn
 * Flåm
