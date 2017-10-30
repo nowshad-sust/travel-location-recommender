@@ -1,7 +1,7 @@
 <template>
 	<div id="welcome">
 		<div class="contaiter text-center">
-			Hello World
+			Application Opening
 			<button class="btn btn-primary" @click="onClickButton">
 				Let's Go!
 			</button>
