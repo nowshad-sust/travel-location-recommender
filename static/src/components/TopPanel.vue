@@ -25,7 +25,7 @@
 
 <style>
 	.caption a {
-        color: white;
+        color: black;
         text-decoration: none;
     }
     .caption a:hover, .caption a:focus {

@@ -1,9 +1,8 @@
 <template>
 	<div id="welcome">
 		<div class="contaiter text-center">
-			Application Opening
 			<button class="btn btn-primary" @click="onClickButton">
-				Let's Go!
+				Let's Go Somewhere!
 			</button>
 		</div>
 	</div>
