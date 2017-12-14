@@ -67,7 +67,10 @@
       
       var ref = this;
 
-      axios.post('http://localhost:8080/v2/post', {data: localChoices})
+      axios.post('/v2/post', {data: localChoices}, {
+          emulateJSON:true,
+          headers: {'Access-Control-Allow-Origin': '*'}
+        })
         .then(response => {
           console.log(response.data);
           // get body data
