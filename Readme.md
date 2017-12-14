@@ -1,6 +1,19 @@
 # I belong To
+### A travel place recommender based on tags
 
-## places list
+
+## Categories
+* season/weather - summar, winter
+* motto - relaxation, adventure 
+* company - solo, friends, family
+* location - costal, urban, country
+* landscape - sea, mountain, forest, desert
+* interest - natural, cultural
+
+
+## Enlisted Places 
+:checkered_flag: means it's into the places.json file
+
 ### USA
 * Death Valley, CA :checkered_flag:
 * Monument Valley, UT :checkered_flag:
@@ -31,5 +44,3 @@
 * Briksdal Glacier, Stryn
 * Flåm
 * Tromsø
-
-
