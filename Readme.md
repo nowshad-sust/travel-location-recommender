@@ -1,6 +1,11 @@
 # I belong To
 ### A travel place recommender based on tags
 
+## How to run
+* install golang, yarn and related dependencies on your system
+* clone the repo
+* run `go run main.go` & `yarn watch` commands in the project directory 
+* browse to `localhost:8080`
 
 ## Categories
 * season/weather - summar, winter
